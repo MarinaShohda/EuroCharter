@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+ label {
+
   }
+
+
+
+a {
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+    padding: 4rem 0 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 100%;
+}
+
+body {
+    background: var(--bodyColor);
+    /* grid-template-columns: repeat(2, 1fr);
+    background: #a7a; */
+}
+
+
+
+@media screen and (min-width: 500px){
+    .homeContainer {
+        TextDiv {
+            .smallText {
+                font-size: 16px;
+            }
+
+            .homeTitle {
+                position: relative;
+                font-size: 2.3rem;
+                width: max-content;
+
+                &::after {
+                position: absolute;
+                content: '';
+                background: hsl(199, 100%, 33%);
+                height: 5px;
+                width: 145px;
+                right: 0px;
+                bottom: 5px;
+                z-index: -1;
+                }
+            }
+        }
+        .cardDiv {
+        grid-template-columns: repeat(2,1fr);
+        background: #a7a;
+        }
+    } 
+
+   .main {
+    .content {
+        grid-template-columns: repeat(2,1fr);
+    }
+    Ticket {
+        height: auto;
+    }
+    }
+
+    .footerContainer {
+        .footerLinks {
+            grid-template-columns: repeat(3,1fr);
+            padding-bottom: 1rem;
+        }
+        .footerDiv {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+   
+}
+
+@media screen and (min-width: 660px){
+    .homeContainer {
+        .cardDiv {
+            padding: 2rem 1rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 840px) {
+    .main {
+        .content {
+            grid-template-columns: repeat(3,1fr);
+        }
+        Ticket {
+            height: auto;
+        }
+    }
+
+    .footerContainer {
+        padding: 5rem 0;
+        
+        .footerCard {
+            flex-direction: row;
+            padding-top: 1.5rem;
+
+            .footerLinks {
+                padding-top: 1.5rem;
+                padding-left: 2rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 940px){
+    .homeContainer {
+        /* height: 80vh; */
+
+        .cardDiv {
+            padding: 2rem 1rem;
+            grid-template-columns: repeat(4,1fr);
+            /* color: red; */
+        }
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1240px){
+    .container {
+        width: 80% !important;
+        margin: auto !important;
+        /* background-color: #a7a; */
+
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+
+    .homeContainer {
+        height: 95vh;   
+
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+
+            .cardDiv {
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(5,1fr);
+                .input {
+                    margin-bottom: 1rem;
+                }
+                .advancedSearch {
+                    bottom: -1rem;
+                    padding: 8px 1rem;
+                    span {
+                        font-size: 17px;
+                    }
+                }
+            } 
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 2560px){
+    body {
+        zoom: 1.7;
+    }
 }
