@@ -12,7 +12,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
+a {
+    color: inherit;
+}
  label {
 
   }
@@ -48,7 +50,6 @@ li {
 
 .grid {
     display: grid;
-    align-items: center;
 }
 
 .btn {

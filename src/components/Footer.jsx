@@ -4,6 +4,8 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -39,7 +41,7 @@ function Footer() {
               <h2>Make a Request</h2>
             </div>
             <div className="inputDiv flex">
-              <input  data-aos="fade-up" type="email  " placeholder="Enter Email Address" />
+              <input  data-aos="fade-up" type="email" placeholder="Enter Email Address" />
               <button data-aos="fade-up" className="btn flex" type="submit">
                 SEND <FiSend className="icon" />
               </button>
@@ -49,10 +51,10 @@ function Footer() {
           <FooterCard className="footerCard flex">
             <FooterIntro className="footerIntro flex">
               <div className="logoDiv">
-                <a href="#" className="logo flex">
+                <Link to="/" className="logo flex">
                   <img src={logo} alt="Eurocharter logo" />
                   <h2>EuroCharter.</h2>
-                </a>
+                </Link>
               </div>
 
               <div className="footerParagraph" data-aos="fade-up" >
@@ -72,23 +74,28 @@ function Footer() {
                 <span className="groupTitle">Our Agency</span>
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
-                  About
+                  <Link to="/about" >About</Link>
+
                 </li>
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
-                  FAQs
+                  <Link to="/faqs">FAQs</Link>
+
                 </li>
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
-                  News
+                  <Link to="/news" >News</Link>
+
                 </li>
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
-                  Covid-19
+                  <Link to="/covid19" >Covid-19</Link>
+
                 </li>
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
-                  Contact Us
+                  <Link to="/contactus">Contact Us</Link>
+
                 </li>
               </div>
               {/* group 2 */}

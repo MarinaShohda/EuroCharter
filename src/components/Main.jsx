@@ -184,21 +184,13 @@ const Title = styled.div`
 
   
 @media screen and (min-width: 500px){
-
   .title {
       font-size: 2rem;
-      // color: #a7a; 
   }
-
   &::after {
     width: 155px;
   }
-
  }
-
-
-
-
 `
 const Content = styled.div`
   justify-content: center;

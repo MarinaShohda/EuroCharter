@@ -3,6 +3,7 @@ import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import logo from "../Assets/logo.png"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState('navBar');
@@ -24,33 +25,35 @@ const Navbar = () => {
     <NavBarSection>
       <Header className="header flex"> 
         <LogoAndName className="logoAndName">
-          <a href="#" className="logo flex">
+          <Link to="/" className="logo flex">
             <div className="logoDiv">
               <img src={logo} alt="EutoCharter logo" />
             </div>
             <h1>EuroCharter.</h1>
-          </a>
+          </Link>
         </LogoAndName>
 
         <NavBar className={active}> 
           <NavLists className="navLists flex ">
-            {/* <li className="navItem">
-              <a href="#" className="navLink">Home</a>
-            </li> */}
+
             <li className="navItem">
-              <a href="#" className="navLink">About</a>
+              <Link to="/about" className="navLink">About</Link>
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">FAQs</a>
+              <Link to="/faqs" className="navLink">FAQs</Link>
+
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Covid-19</a>
+              <Link to="/covid19" className="navLink">Covid-19</Link>
+
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">News</a>
+              <Link to="/news" className="navLink">News</Link>
+
             </li>
             <li className="navItem">
-              <a href="#" className="navLink">Contact Us</a>
+              <Link to="/contactus" className="navLink">Contact Us</Link>
+
             </li>
 
             <button className="btn">
