@@ -37,22 +37,22 @@ const Navbar = () => {
           <NavLists className="navLists flex ">
 
             <li className="navItem">
-              <Link to="/about" className="navLink">About</Link>
+              <Link to="/about" className="navLink" onClick={removeNavbar} >About</Link>
             </li>
             <li className="navItem">
-              <Link to="/faqs" className="navLink">FAQs</Link>
+              <Link to="/faqs" className="navLink" onClick={removeNavbar} >FAQs</Link>
 
             </li>
             <li className="navItem">
-              <Link to="/covid19" className="navLink">Covid-19</Link>
+              <Link to="/covid19" className="navLink" onClick={removeNavbar} >Covid-19</Link>
 
             </li>
             <li className="navItem">
-              <Link to="/news" className="navLink">News</Link>
+              <Link to="/news" className="navLink" onClick={removeNavbar} >News</Link>
 
             </li>
             <li className="navItem">
-              <Link to="/contactus" className="navLink">Contact Us</Link>
+              <Link to="/contactus" className="navLink" onClick={removeNavbar} >Contact Us</Link>
 
             </li>
 

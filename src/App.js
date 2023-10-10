@@ -7,18 +7,20 @@ import Faqs from './components/navPages/Faqs.jsx';
 import Covid from './components/navPages/Covid.jsx';
 import News from './components/navPages/News.jsx';
 import Contact from './components/navPages/Contact.jsx';
-
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import ScrollToTop from './scrollToTop';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import NotFound from './components/NotFound';
 
 const App = () => {
+
+
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <ScrollToTop />
+        {/* <Navbar /> */}
         {/* <Home /> */}
         
-        
-
         <Routes>
           <Route path="/"  element={ <Home /> } />
           <Route path="/EuroCharter"  element={ <Home /> } />
@@ -27,11 +29,11 @@ const App = () => {
           <Route path="/covid19"  element={ <Covid /> } />
           <Route path="/news"  element={ <News /> } />
           <Route path="/contactUs"  element={ <Contact /> } />
-          <Route path="*"  element={ <p>Page Not found</p> } />
+          <Route path="*"  element={ <NotFound /> } />
 
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   )

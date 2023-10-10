@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-// import logo from "\Assets/logo.png"
-// src\Assets\stargazing.png
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function Contact() {
 
@@ -16,74 +16,78 @@ function Contact() {
   // data-aos="fade-right" data-aos="fade-up"
 
   return (
-    <Container className=" main container section">
-      <div className="contactContainer">
-        <Title className="flex">
-          <h3 data-aos="fade-right" className="title">Contact Us</h3>
-          <p data-aos="fade-up" >Thank you for choosing <b>EuroCharter</b> for your travel needs. We are here to assist you and provide the best customer service possible. If you have any questions, concerns, or need assistance with your travel plans, please don't hesitate to get in touch with us.</p>
-        </Title> 
-      
+    <>
+      <Navbar />
+      <Container className=" main container section">
+          <div className="contactContainer">
+            <Title className="flex">
+              <h3 data-aos="fade-right" className="title">Contact Us</h3>
+              <p data-aos="fade-up" >Thank you for choosing <b>EuroCharter</b> for your travel needs. We are here to assist you and provide the best customer service possible. If you have any questions, concerns, or need assistance with your travel plans, please don't hesitate to get in touch with us.</p>
+            </Title> 
+          
 
-        <Content>
-          <div className="content flex">
-            <div className="textDiv">
+            <Content>
+              <div className="content flex">
+                <div className="textDiv">
 
 
-              <div className="sec" data-aos="fade-up">
-                <h3 data-aos="fade-right">How to Reach Us:</h3>
-                <h4 data-aos="fade-right">Customer Support</h4>
-                <p>Our customer support team is available around the clock to assist you with any inquiries or issues you may have.</p>
-                <ul>
-                  <li><b>- Phone: </b>+20 101-381-2562</li>
-                  <li><b>- Email: </b>Sales@eurocharter.eu.com</li>
-                </ul>
+                  <div className="sec" data-aos="fade-up">
+                    <h3 data-aos="fade-right">How to Reach Us:</h3>
+                    <h4 data-aos="fade-right">Customer Support</h4>
+                    <p>Our customer support team is available around the clock to assist you with any inquiries or issues you may have.</p>
+                    <ul>
+                      <li><b>- Phone: </b>+20 101-381-2562</li>
+                      <li><b>- Email: </b>Sales@eurocharter.eu.com</li>
+                    </ul>
+                  </div>
+
+                  <div className="sec" data-aos="fade-up">
+                    <h4 data-aos="fade-right">Office Hours</h4>
+                    <ul>
+                      <li>- Monday to Friday: 8:00 AM - 8:00 PM (local time)</li>
+                      <li>- Saturday: Closed</li>
+                      <li>- Sunday: Closed</li>
+                    </ul>
+                  </div>
+
+                  <div className="sec" data-aos="fade-up">
+                    <h4 data-aos="fade-right" >Get In Touch</h4>
+                    <p>If you prefer to send us a message or have a specific inquiry, please use the contact form below. Our team will respond to your message as soon as possible.</p>
+                    <form action="" className="form flex">
+                      <label >Your Name:</label>
+                      <input type="text"  placeholder="Enter Name..." />
+
+                      <label >Your Email:</label>
+                      <input type="email"  placeholder="Enter Email Address..."  />
+
+                      <label >Tell us how we can help..</label>
+                      <textarea  cols="29" rows="5" placeholder="Enter Inquiry, Question or concern..." ></textarea>
+
+                      <button type="submit" className="btn">Send</button>
+                    </form>
+                  </div>
+
+                  <div className="sec" data-aos="fade-up">
+                    <h4 data-aos="fade-right" >Your Feedback Matters</h4>
+                    <p>We value your feedback and are continuously working to improve our services.</p>
+                  </div>
+
+                  <div className="sec" data-aos="fade-up">
+                    <p>We appreciate your trust in <b>EuroCharter</b>, and we look forward to assisting you with your travel plans. Your satisfaction is our priority, and we are dedicated to making your travel experience smooth and enjoyable.</p>
+                  </div>
+
+                </div>
+
+                <div className="imgDiv">
+                  <img src="https://images.pexels.com/photos/2413238/pexels-photo-2413238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                </div>
+
               </div>
-
-              <div className="sec" data-aos="fade-up">
-                <h4 data-aos="fade-right">Office Hours</h4>
-                <ul>
-                  <li>- Monday to Friday: 8:00 AM - 8:00 PM (local time)</li>
-                  <li>- Saturday: Closed</li>
-                  <li>- Sunday: Closed</li>
-                </ul>
-              </div>
-
-              <div className="sec" data-aos="fade-up">
-                <h4 data-aos="fade-right" >Get In Touch</h4>
-                <p>If you prefer to send us a message or have a specific inquiry, please use the contact form below. Our team will respond to your message as soon as possible.</p>
-                <form action="" className="form flex">
-                  <label >Your Name:</label>
-                  <input type="text"  placeholder="Enter Name..." />
-
-                  <label >Your Email:</label>
-                  <input type="email"  placeholder="Enter Email Address..."  />
-
-                  <label >Tell us how we can help..</label>
-                  <textarea  cols="29" rows="5" placeholder="Enter Inquiry, Question or concern..." ></textarea>
-
-                  <button type="submit" className="btn">Send</button>
-                </form>
-              </div>
-
-              <div className="sec" data-aos="fade-up">
-                <h4 data-aos="fade-right" >Your Feedback Matters</h4>
-                <p>We value your feedback and are continuously working to improve our services.</p>
-              </div>
-
-              <div className="sec" data-aos="fade-up">
-                <p>We appreciate your trust in <b>EuroCharter</b>, and we look forward to assisting you with your travel plans. Your satisfaction is our priority, and we are dedicated to making your travel experience smooth and enjoyable.</p>
-              </div>
-
-            </div>
-
-            <div className="imgDiv">
-              <img src="https://images.pexels.com/photos/2413238/pexels-photo-2413238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-            </div>
-
+            </Content>
           </div>
-        </Content>
-      </div>
-    </Container>
+      </Container>
+      <Footer />
+    </>
   )
 }
 
@@ -195,12 +199,13 @@ const Content = styled.div`
   .form {
     align-items: flex-start;
     flex-direction: column;
+    // background: #a7a;
     
     label {
       margin: 1.5rem 0 0.3rem 0;
     }
     input {
-      padding: 0.5rem .6rem;
+      padding: 0.5rem .3rem;
       border-radius: 1rem;
       border: 1px solid #595961;
       outline: none;
@@ -272,7 +277,16 @@ const Content = styled.div`
       p,
       li,
       label {
-        font-size: 0.9rem;
+        font-size: 0.958rem;
+        // color: #f00;
+
+      }
+
+      .sec {
+        h4 {
+          font-size: 1.2rem;
+          // color: #a7a;
+        }
       }
 
     .form {

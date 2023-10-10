@@ -1,13 +1,16 @@
 import styled from "styled-components";
-
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function News() {
   return (
-    <div>
+    <>
+      <Navbar />
       <Container>
         <h1>News page here</h1>
       </Container>
-    </div>
+      <Footer />
+    </>
   )
 }
 

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+
 
 function Faqs() {
 
@@ -13,7 +16,8 @@ function Faqs() {
   // data-aos="fade-right" data-aos-duration="2000"
 
   return (
-    
+    <>
+      <Navbar />
       <Container className="main container section">
         <Title className="flex" data-aos="fade-right">
               <h3 className="title">Frequently Asked Questions</h3>
@@ -109,7 +113,8 @@ function Faqs() {
         </Content> 
 
       </Container>
-   
+      <Footer />
+    </>
   )
 }
 
@@ -183,6 +188,15 @@ const Content = styled.div`
    @media screen and (max-width: 730px){
     .content {
       grid-template-columns: 100%;
+
+      p, 
+      li {
+        font-size: 0.958rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+
+      }
 
 
     }

@@ -182,7 +182,12 @@ const Title = styled.div`
     z-index: -1;
   }
 
-  
+  @media screen and (max-width: 500px){
+    h3 {
+      font-size: 1.4rem;
+      // color: #f00;
+    }
+  }
 @media screen and (min-width: 500px){
   .title {
       font-size: 2rem;
