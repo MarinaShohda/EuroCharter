@@ -97,6 +97,8 @@ export default Contact
 const Container = styled.div`
   padding-bottom: 10rem;
 
+
+
   @media screen and (max-width: 500px){
     padding-bottom: 4rem;
 

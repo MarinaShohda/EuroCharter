@@ -82,11 +82,11 @@ function Footer() {
                   <Link to="/faqs">FAQs</Link>
 
                 </li>
-                <li className="footerList flex">
+                {/* <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   <Link to="/news" >News</Link>
 
-                </li>
+                </li> */}
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   <Link to="/covid19" >Covid-19</Link>
@@ -101,10 +101,10 @@ function Footer() {
               {/* group 2 */}
               <div className="linkGroup"  data-aos="fade-up" data-aos-duration="3000">
                 <span className="groupTitle">Partners</span>
-                <li className="footerList flex">
+                {/* <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Bookings
-                </li>
+                </li> */}
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Rentcars

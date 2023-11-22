@@ -41,19 +41,15 @@ const Navbar = () => {
             </li>
             <li className="navItem">
               <Link to="/faqs" className="navLink" onClick={removeNavbar} >FAQs</Link>
-
             </li>
             <li className="navItem">
               <Link to="/covid19" className="navLink" onClick={removeNavbar} >Covid-19</Link>
-
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <Link to="/news" className="navLink" onClick={removeNavbar} >News</Link>
-
-            </li>
+            </li> */}
             <li className="navItem">
               <Link to="/contactus" className="navLink" onClick={removeNavbar} >Contact Us</Link>
-
             </li>
 
             <button className="btn">
