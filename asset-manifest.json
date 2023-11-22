@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/EuroCharter/static/css/main.c8f9b4c2.css",
-    "main.js": "/EuroCharter/static/js/main.e4602c09.js",
+    "main.js": "/EuroCharter/static/js/main.237af482.js",
     "static/media/landscape.mp4": "/EuroCharter/static/media/landscape.39f2ae9130e47af303ca.mp4",
     "static/media/mountains.mp4": "/EuroCharter/static/media/mountains.b2c597810d1a3f730441.mp4",
     "static/media/logo.png": "/EuroCharter/static/media/logo.d3ff620df14f9f349d59.png",
     "index.html": "/EuroCharter/index.html",
     "main.c8f9b4c2.css.map": "/EuroCharter/static/css/main.c8f9b4c2.css.map",
-    "main.e4602c09.js.map": "/EuroCharter/static/js/main.e4602c09.js.map"
+    "main.237af482.js.map": "/EuroCharter/static/js/main.237af482.js.map"
   },
   "entrypoints": [
     "static/css/main.c8f9b4c2.css",
-    "static/js/main.e4602c09.js"
+    "static/js/main.237af482.js"
   ]
 }
