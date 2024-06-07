@@ -113,7 +113,7 @@ body {
         }
         .cardDiv {
         grid-template-columns: repeat(2,1fr);
-        background: #a7a;
+        /* background: #a7a; */
         }
     } 
 

@@ -184,6 +184,8 @@ const CardDiv = styled.div`
   position: relative;
   padding: 2rem 1rem;
   background: #fff;
+  // background:	rgb(255,255,0);
+
   border-radius: 10px;
   gap: 1rem;
   // padding-bottom: 5rem;

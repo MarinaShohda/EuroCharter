@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
 
             <button className="btn">
-              <a href="#">BOOK NOW</a>
+              <a href="">BOOK NOW</a>
             </button>
           </NavLists>
 
@@ -213,7 +213,6 @@ const NavBarSection = styled.section`
         padding: 0 0.45rem;
         font-size: 0.9rem;
         font-weight: 500;
-        // background: #a7a;
 
         &:hover {
           color: hsl(199, 100%, 33%);

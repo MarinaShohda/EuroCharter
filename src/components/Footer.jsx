@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FiChevronRight, FiPhone, FiSend } from "react-icons/fi";
+import { FiChevronRight, FiSend } from "react-icons/fi";
 import { AiOutlinePhone } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMailOpen } from "react-icons/hi";
